@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --principal-color:#C59000;
+    --body-color:#666665;
+    --header-footer-color:rgb(1,1,1,0.55);
+    --principal-police:"Sedgwick Ave Display",cursive;
+    --principal-color-opacity:#c5910016;
+    --secondary-police:"Outfit", sans-serif;
+}
+
+
+
+body{
+    background-color: var(--body-color);
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    padding-top: 64px;
+}
+
+h1{
+    font-weight: 10;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--principal-color);
+    padding-bottom: 4rem;
+    font-family: var(--principal-police);
+    font-weight: 900;
+    text-shadow: 5px 5px 10px rgb(1,1,1,0.10);
+}
+
+@media screen and (min-width: 900px) {
+    h1{
+        text-align: center;
+        color: var(--principal-color);
+        padding:2rem 0;
+        font-family: var(--principal-police);
+        font-weight: 900;
+    }
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: 110px 110px 200px;
+    grid-template-rows: 150px 250px 300px;
+    gap: 10px;
+   padding: 0 12.5px;
+    
+}
+
+.images-container article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--principal-color-opacity);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(1,1,1,0.25);
+}
+
+@media screen and (min-width: 900px) {
+    .images-container{
+        display: grid;
+        grid-template-columns:150px 150px 150px 150px 150px 150px;
+        grid-template-rows:150px 150px 150px;
+        gap: 10px;
+       padding: 0 12.5px;
+        
+    }
+}
+
+.images-container article:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c5910063;
+    border-radius: 15px;
+}
+
+.images-container img{
+
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.pulls{
+    grid-column: 1 / 3;
+    grid-row: auto;
+    
+   
+}
+
+.t-shirt{
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.t-shirt img{
+    max-width: 125px;
+    height: 140px;
+    padding-top: px;
+}
+
+.jeans{
+    grid-column: auto;
+    grid-row: auto;
+}
+
+article p{
+    font-family: var(--principal-police);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    color: #C59000;
+}
+
+.basket img{
+    width: 110px;
+   padding-bottom: 2.75rem;
+   
+}
+
+.baskets-2{
+    grid-column: 2/5;
+    grid-row: 2;
+}
+
+.baskets-3{
+    
+   
+    grid-column: 6/7;
+    grid-row: 2/4;
+}
+
+.baskets-3 p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 310px;
+   
+}
+
+
+.baskets-3 article {
+    height: 100%;
+}
+
+.jeans {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.images-container article a{
+    font-family: var(--principal-police);
+    color: var(--principal-color);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.images-container article a:hover{
+    text-decoration: underline;
+}
+
+.t-shirt{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.basket{
+    grid-column: 4;
+    grid-row: 3;
+}
+
