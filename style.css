@@ -80,12 +80,7 @@ header{
     
 }
 
-.menu ul a:hover{
-    height: 30px;
-    width: auto;
-    color: var(--principal-color);
-    transition: 5s;
-}
+
 
 @media screen and (min-width: 900px) {
     .menu ul{
@@ -100,6 +95,15 @@ header{
         width: 15rem;
         font-weight: 100;
     }
+}
+
+@media screen and (min-width: 900px) {
+    .menu ul a:hover{
+    height: 30px;
+    width: auto;
+    color: var(--principal-color);
+    transition: 5s;
+}
 }
 
 header img {
@@ -124,11 +128,7 @@ header img {
     text-align: center;
 }
 
-.compte:hover{
-    height: 30px;
 
-    color: var(--principal-color);
-}
 
 @media screen and (min-width: 900px) {
     .compte{
@@ -136,7 +136,16 @@ header img {
         font-size: 17px;
         width: 5rem;
         text-align: center;
+
     }
+}
+
+@media screen and (min-width: 900px) {
+    .compte:hover{
+    height: 30px;
+     width: auto;
+    color: var(--principal-color);
+}
 }
 
 main{
